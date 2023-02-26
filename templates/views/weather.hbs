@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+</head>
+
+
+
+
+
+<body>
+    <!-- nabar -->
+    {{>navbar}}
+
+    <!-- main body -->
+
+    <div class="container-fluid main_body">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+
+                <div class="search_bar">
+                    <form>
+                        <input type="text" id="city" placeholder="Enter city name" autocomplete="">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInfo">
+                    <div class="calInfo">
+                        <p id="day">Monday</p>
+                        <p id="date">26 feb</p>
+                    </div>
+                    <div class="main_data">
+                         <p id="city_data">Output here</p>
+                         <div class="weather_data data_hide">
+                            <p id="temp"><span>80</span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                         </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
