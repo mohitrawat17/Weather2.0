@@ -10,7 +10,7 @@
 }
 
 html{
-    font-size: 63.5%;
+    font-size:15px;
 }
 
 .main_menu{
@@ -18,12 +18,90 @@ html{
 }
 
 .navbar{
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+    /* width:100vh; */
 }
-@media(max-width:584px){
+
+.nav-link{
+    font-size: 14px;
+}
+
+.main_body_left{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+bottom:30px;
+}
+.main_body_right{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_body_left p{
+    font-size: 2rem;
+}
+.main_body_left{
+  font-size: 4 rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+.main_body_left .text_w{
+    color: var(--main-color);
+}
+.main_body_left button{
+    margin-top: 20px;
+    border: none;
+    padding: 0.6rem 1.6rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+.main_body_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+figure img{
+    margin-top: 2rem;
+    height: 400px;
+width: 600px;
+
+}
+.error_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnerr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abtbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+
+@media(max-width:768px){
     .navbar-nav{
         font-size: 50%;
     }
+    .main_body_left{
+        height: auto;
+        margin: 3rem 0;
+    }
+    /* .main_body_right{
+        height: auto;
+        margin: 1rem 0;
+    } */
+      
 }
 
 
