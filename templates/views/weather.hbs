@@ -3,7 +3,7 @@
 
 <head>
     {{>head}}
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css ">
 </head>
 
     
@@ -23,7 +23,7 @@
 
 
                 <div class="search_bar">
-                    <form>
+                    <form class="temp_form">
                         <input type="text" id="city" placeholder="Enter city name" autocomplete="">
                         <input type="submit" value="search" id="submitBtn">
                     </form>
@@ -36,7 +36,7 @@
                     <div class="main_data">
                          <p id="city_data">Output here</p>
                          <div class="weather_data data_hide">
-                            <p id="temp"><span>80</span><sup>o</sup>C</p>
+                            <p id="temp"><span id="temp_new">80</span><sup>o</sup>C</p>
                             <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
                          </div>
                     </div>
@@ -50,8 +50,37 @@
     </div>
 
     
-</body>
 <script src="js/first.js"></script>
+<script>
+    const day=document.getElementById('day')
+    const date=document.getElementById('date')
+    const getCurrentDay=()=>{
+        let weeekday=new Array(7);
+        weeekday[0]='Sunday'
+        weeekday[1]='Monday'
+        weeekday[2]='Tuesday'
+        weeekday[3]='Wednessday'
+        weeekday[4]='Thrusday'
+        weeekday[5]='Friday'
+        weeekday[6]='Saturday'
+         
+         let currentTime=new Date();
+         let days=weeekday[currentTime.getDay()];
+         day.innerText=days
+    }
+    getCurrentDay()
+
+
+    const getCurrentDate=()=>{
+        let months=["January","February","March","April","May","June","July","August","September","October","November","December"]
+         let now=new Date()
+         let month=months[now.getMonth()]
+         let datee=now.getDate();
+         date.innerText=`${datee} ${month}`
+    }
+    getCurrentDate()
+</script>
+</body>
 
 
 

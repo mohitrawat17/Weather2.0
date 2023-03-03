@@ -176,6 +176,10 @@ color:var(--main-color) ;
 background-color: #fff;
 }
 
+.data_hide{
+    content-visibility: hidden;
+}
+
 
 @media(max-width:768px){
     .navbar-nav{
@@ -189,6 +193,9 @@ background-color: #fff;
         height: auto;
         margin: 1rem 0;
     } */
+    .temp_form{
+        width: auto;
+    }
       
 }
 
